@@ -99,6 +99,7 @@ body{
     margin-block-start:10%;
   // margin-inline-end: 100px;
   color:hsl(222, 100%, 37%);
+  
 
 }
 .card__lines{
@@ -133,8 +134,8 @@ body{
 .card__back{
     transform: rotateY(.5turn);
    background-color:  hsl(60°,95%, 93%);
-   border:1px solid black;
-
+   border:4px solid rgb(66, 66, 66);
+  
 
 }
 
