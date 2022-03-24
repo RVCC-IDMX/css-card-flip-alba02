@@ -23,11 +23,16 @@ body{
 .card__content{
     text-align: center;
     position:relative;
-    transition: transform 3s;
-    transform-style: preserve-3d;
     height: 560px;
 } 
 
+@media (hover){
+    .card__content{
+        transition: transform 3s;
+        transform-style: preserve-3d;
+    }
+
+     
 .card:hover .card__content{
     transform: rotateY(.5turn);
 }
@@ -52,7 +57,6 @@ body{
    font-weight: 800;
    color: hsl(222, 88%, 37%);
   
- 
 }
 //img{
    // max-width: 100%;
@@ -121,6 +125,8 @@ body{
         right: 10px;
         width: 20%;
         height: 15%;
+        //max-width: 50%;
+        //height: auto;
       
 }
 
@@ -128,7 +134,20 @@ body{
     transform: rotateY(.5turn);
    background-color:  hsl(60°,95%, 93%);
    border:1px solid black;
-   
+
+
 }
 
 
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
